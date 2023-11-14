@@ -18,12 +18,12 @@ function App() {
         <Layout> 
           <div className='routes'>
             <Routes>
-              <Route exact path='/' element={<Homepages/>}/>
-              <Route exact path='/exchanges' element={<Exchanges/>}/>
-              <Route exact path='/cryptocurrencies' element={<Currency/>}/>
-              <Route exact path='/crypto/:coinUuid' element={<CryptoDetails/>}/>
-              <Route exact path='/news' element={<News/>}/>
-              <Route exact path='*' element="404 Route Does not Exist."/>
+              <Route path='/' element={<Homepages/>}/>
+              <Route path='/exchanges' element={<Exchanges/>}/>
+              <Route path='/cryptocurrencies' element={<Currency/>}/>
+              <Route path='/crypto/:coinUuid' element={<CryptoDetails/>}/>
+              <Route path='/news' element={<News/>}/>
+              <Route path='*' element="404 Route Does not Exist."/>
             </Routes>
           </div>
         </Layout>
