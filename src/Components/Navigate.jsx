@@ -30,7 +30,7 @@ const Navigate = () => {
         <div className='logo-container'>
             <Avatar src={icon} size='large'/>
             <Typography.Title level={2} className='logo'>
-              <Link to="/">CryptoWorld</Link>
+              <Link to="/CryptoWorld">CryptoWorld</Link>
             </Typography.Title>
             <Button className='menu-control-container' onClick={() => setActiveMenu(!activeMenu)}>
               {activeMenu?<CloseOutlined/>:<MenuOutlined />}
