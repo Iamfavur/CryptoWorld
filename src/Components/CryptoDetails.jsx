@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import millify from 'millify';
 import { Col, Row,Typography,Select } from 'antd';
-import { MoneyCollectOutlined,DollarCircleOutlined,FunctionOutlined,ExclamationCircleOutlined,StopOutlined,TrophyOutlined, NumberOutlined,ThunderboltOutlined, FundOutlined, CheckOutlined} from '@ant-design/icons';
+import { MoneyCollectOutlined,DollarCircleOutlined,ExclamationCircleOutlined,StopOutlined,TrophyOutlined, NumberOutlined,ThunderboltOutlined, FundOutlined, CheckOutlined} from '@ant-design/icons';
 import { useGetCryptoDetailsQuery,useGetCryptoHistoryQuery } from '../Services/cryptoApi';
 import LineChart from './LineChart';
 import Loader from './Loader';

@@ -1,9 +1,9 @@
-import React, {useState,useEffect} from 'react'
-import {Button, Menu, Typography, Avatar} from "antd"
-import { HolderOutlined, MoneyCollectOutlined,BulbOutlined,FunctionOutlined,MenuOutlined, HomeOutlined, FundOutlined,CloseOutlined } from '@ant-design/icons'
-import { Link } from 'react-router-dom'
-import icon from "../Assets/Images/IMG_0498.WEBP"
-{/* <CloseOutlined /> */}
+import React, {useState,useEffect} from 'react';
+import {Button, Menu, Typography, Avatar} from "antd";
+import { BulbOutlined,MenuOutlined, HomeOutlined, FundOutlined,CloseOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import icon from "../Assets/Images/IMG_0498.WEBP";
+
 const Navigate = () => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [screenSize, setScreenSize] = useState(null);

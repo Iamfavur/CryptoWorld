@@ -12,7 +12,7 @@ const demoImage ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0iDDUES
 
 const News = ({simplified}) => {
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
-  const {data:cryptoNews} = useGetCryptoNewsQuery({
+  const {data:cryptoNews, isError} = useGetCryptoNewsQuery({
     newsCategory, 
     count: simplified ? 6 : 20,
   });
@@ -21,6 +21,7 @@ const News = ({simplified}) => {
 
   const {data} = useGetCryptosQuery(100);
   if(!cryptoNews?.value) return <Loader/>;
+  if(isError) return <Loader/>;
   return (
     <Row gutter={[24,24]}>
       {
@@ -46,7 +47,7 @@ const News = ({simplified}) => {
             <a href={news.url} target='_blank' rel="noreferrer">
               <div className='news-image-container'>
                 <Title className='news-title' level={4}>{news.name}</Title>
-                <img style={{maxWidth:200, maxHeight:200, borderRadius:23}} src={news?.image?.thumbnail.contentUrl || demoImage} alt='Image'/>
+                <img style={{maxWidth:200, maxHeight:200, borderRadius:23}} src={news?.image?.thumbnail.contentUrl || demoImage} alt='img'/>
               </div>
               <p>
                 {news.description > 100 ? `${news.description.substring(0,100)}.....` : news.description}
