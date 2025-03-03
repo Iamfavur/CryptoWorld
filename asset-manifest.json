@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CryptoWorld/static/css/main.df78dfa1.css",
-    "main.js": "/CryptoWorld/static/js/main.e112e40e.js",
+    "main.js": "/CryptoWorld/static/js/main.74547866.js",
     "static/media/IMG_0498.WEBP": "/CryptoWorld/static/media/IMG_0498.6a539cab91c8a543297a.WEBP",
     "index.html": "/CryptoWorld/index.html",
     "main.df78dfa1.css.map": "/CryptoWorld/static/css/main.df78dfa1.css.map",
-    "main.e112e40e.js.map": "/CryptoWorld/static/js/main.e112e40e.js.map"
+    "main.74547866.js.map": "/CryptoWorld/static/js/main.74547866.js.map"
   },
   "entrypoints": [
     "static/css/main.df78dfa1.css",
-    "static/js/main.e112e40e.js"
+    "static/js/main.74547866.js"
   ]
 }
